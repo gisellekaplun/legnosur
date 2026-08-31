@@ -63,6 +63,7 @@ ul { list-style: none; }
     background: #10131A;
     border-bottom: 1px solid #262B36;
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .announce__track {
@@ -105,17 +106,15 @@ ul { list-style: none; }
     background: rgba(20, 18, 16, 0.92);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--dark-border);
+    transition: transform 0.3s ease;
 }
 
-@media (min-width: 769px) {
-    .announce {
-        position: static;
-        border-bottom: 1px solid #262B36;
-    }
+.nav--hidden {
+    transform: translateY(-100%);
+}
 
-    .nav {
-        top: 0;
-    }
+.announce--hidden {
+    transform: translateY(-100%);
 }
 
 .nav__container {

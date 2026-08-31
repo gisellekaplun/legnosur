@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Navbar Scroll Effect ---
     const nav = document.getElementById('nav');
+    const announce = document.getElementById('announce');
     let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
@@ -32,9 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const menuOpen = navMenu.classList.contains('active');
 
         if (currentScroll > lastScroll && currentScroll > 120 && !menuOpen) {
-            nav.style.transform = 'translateY(-100%)';
+            nav.classList.add('nav--hidden');
+            if (announce) announce.classList.add('announce--hidden');
         } else {
-            nav.style.transform = 'translateY(0)';
+            nav.classList.remove('nav--hidden');
+            if (announce) announce.classList.remove('announce--hidden');
         }
         lastScroll = currentScroll;
     });
