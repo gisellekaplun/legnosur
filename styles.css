@@ -107,6 +107,17 @@ ul { list-style: none; }
     border-bottom: 1px solid var(--dark-border);
 }
 
+@media (min-width: 769px) {
+    .announce {
+        position: static;
+        border-bottom: 1px solid #262B36;
+    }
+
+    .nav {
+        top: 0;
+    }
+}
+
 .nav__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -541,9 +552,19 @@ ul { list-style: none; }
     .nav__menu.active { right: 0; }
     .nav__link { font-size: 1.1rem; padding: 12px; }
 
-    .hero { min-height: auto; padding: 120px 24px 60px; }
+    .hero {
+        min-height: auto;
+        padding: 120px 24px 60px;
+    }
     .hero__actions { flex-direction: column; }
     .hero__actions .btn { width: 100%; }
+
+    .hero__bg-img {
+        object-fit: cover;
+        object-position: center;
+        transform: scale(1.2);
+        transform-origin: center;
+    }
 
     .nosotros__body { grid-template-columns: 1fr; gap: 40px; }
     .productos__grid { grid-template-columns: 1fr; }
