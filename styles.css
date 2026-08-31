@@ -32,7 +32,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 120px;
 }
 
 body {
@@ -53,10 +53,52 @@ ul { list-style: none; }
     padding: 0 24px;
 }
 
+/* --- TOP ANNOUNCEMENT BAR --- */
+.announce {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    background: #10131A;
+    border-bottom: 1px solid #262B36;
+    overflow: hidden;
+}
+
+.announce__track {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7px 16px;
+}
+
+.announce__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.announce__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--gold-light);
+    white-space: nowrap;
+}
+
+.announce__icon { color: var(--gold); flex-shrink: 0; }
+
+.announce__dot { color: rgba(255,255,255,0.3); }
+
 /* --- NAV --- */
 .nav {
     position: fixed;
-    top: 0;
+    top: 34px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -136,7 +178,7 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     position: relative;
-    padding: 120px 24px 80px;
+    padding: 150px 24px 80px;
     background: linear-gradient(140deg, #141210 0%, #1D1A17 45%, #201C16 100%);
     overflow: hidden;
 }
@@ -435,6 +477,10 @@ ul { list-style: none; }
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
+    .announce__item { font-size: 0.72rem; }
+    .announce__dot { display: none; }
+    .announce__content { gap: 10px; }
+
     .nav__toggle { display: flex; }
 
     .nav__menu {
@@ -464,4 +510,23 @@ ul { list-style: none; }
     .productos__grid { grid-template-columns: 1fr; }
     .contacto__grid { grid-template-columns: 1fr; }
     .catalogo__inner { padding: 48px 24px; }
+}
+
+@media (max-width: 420px) {
+    .announce__track {
+        padding: 0;
+        max-width: none;
+    }
+
+    .announce__content {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        animation: announce-scroll 14s linear infinite;
+        padding-left: 100%;
+    }
+
+    @keyframes announce-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
 }
