@@ -128,7 +128,7 @@ ul { list-style: none; }
 }
 
 .nav__logo {
-    font-family: var(--font-serif);
+    font-family: font-family: var(--font-sans);
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--white);
