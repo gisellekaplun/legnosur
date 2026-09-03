@@ -140,7 +140,7 @@ ul { list-style: none; }
 }
 
 .nav__logo-brand {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--white);
@@ -261,6 +261,10 @@ ul { list-style: none; }
     color: var(--white);
     font-weight: 600;
     margin-bottom: 24px;
+}
+
+.hero__accent {
+    color: var(--gold-light);
 }
 
 .hero__subtitle {
@@ -516,7 +520,7 @@ ul { list-style: none; }
 }
 
 .footer__brand {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 1.6rem;
     letter-spacing: 2px;
     color: var(--white);
