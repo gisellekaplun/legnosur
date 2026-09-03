@@ -128,7 +128,7 @@ ul { list-style: none; }
 }
 
 .nav__logo {
-    font-family: font-family: var(--font-sans);
+    font-family: var(--font-serif);
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--white);
@@ -328,7 +328,13 @@ ul { list-style: none; }
 }
 
 /* --- NOSOTROS --- */
-.nosotros { padding: 100px 0; background: var(--dark); }
+.nosotros {
+    padding: 100px 0;
+    position: relative;
+    background:
+        linear-gradient(rgba(20, 18, 16, 0.82), rgba(20, 18, 16, 0.85)),
+        url('assets/img/madera.jpg') center / cover no-repeat;
+}
 
 .nosotros__body {
     display: grid;
