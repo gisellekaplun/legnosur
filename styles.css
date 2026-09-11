@@ -117,7 +117,7 @@ ul { list-style: none; }
     font-size: 0.78rem;
     font-weight: 500;
     letter-spacing: 0.4px;
-    color: var(--gold-light);
+    color: var(--gold);
     white-space: nowrap;
 }
 
@@ -295,7 +295,7 @@ ul { list-style: none; }
 }
 
 .hero__accent {
-    color: var(--gold-light);
+    color: var(--gold);
 }
 
 .hero__subtitle {
@@ -434,7 +434,7 @@ ul { list-style: none; }
 
 .nosotros__text p { font-size: 1.05rem; margin-bottom: 20px; color: var(--gray); }
 .nosotros__text strong { color: var(--white); font-weight: 600; }
-.nosotros__text em { color: var(--gold-light); font-style: normal; }
+.nosotros__text em { color: var(--gold); font-style: normal; }
 
 .nosotros__card {
     background: var(--dark-card);
