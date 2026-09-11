@@ -412,6 +412,10 @@ ul { list-style: none; }
     line-height: 1.2;
 }
 
+.section-title__accent {
+    color: var(--gold);
+}
+
 /* --- NOSOTROS --- */
 .nosotros {
     padding: 100px 0;
