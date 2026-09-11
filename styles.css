@@ -149,41 +149,31 @@ ul { list-style: none; }
 .nav__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 8px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    min-height: 72px;
 }
 
 .nav__logo {
     font-family: var(--font-sans);
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--white);
-    letter-spacing: 2px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 1.1;
 }
 
-.nav__logo-brand {
-    font-family: var(--font-sans);
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--white);
-    letter-spacing: 2px;
+.nav__logo-img {
+    height: 72px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    object-position: left center;
 }
 
 .nav__logo-slogan {
-    font-family: var(--font-sans);
-    font-size: 0.62rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    color: var(--gray);
-    text-transform: none;
-    margin-top: 3px;
+    display: none;
 }
 
 .nav__menu {
@@ -237,7 +227,7 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     position: relative;
-    padding: 150px 24px 80px;
+    padding: 160px 24px 80px;
     background: linear-gradient(140deg, #141210 0%, #1D1A17 45%, #201C16 100%);
     overflow: hidden;
 }
@@ -576,7 +566,7 @@ ul { list-style: none; }
 .catalogo__actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 
 /* --- CONTACTO --- */
-.contacto { padding: 0 0 100px; background: var(--dark-soft); }
+.contacto { padding: 0 0 100px; background: var(--dark-soft); position: relative; }
 
 .contacto__grid {
     display: grid;
@@ -602,6 +592,26 @@ ul { list-style: none; }
     margin-bottom: 8px;
 }
 
+.contacto__social {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.contacto__instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.contacto__instagram:hover {
+    color: var(--gold);
+    opacity: 1;
+}
+
 .contacto__item a { color: var(--white); font-size: 1.05rem; }
 .contacto__item a:hover { color: var(--gold); }
 .contacto__item p { color: var(--white); font-size: 1.05rem; }
@@ -610,16 +620,20 @@ ul { list-style: none; }
 .footer {
     padding: 48px 24px;
     background: #0E0D0B;
-    text-align: center;
     border-top: 1px solid var(--dark-border);
 }
 
-.footer__brand {
-    font-family: var(--font-sans);
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: var(--white);
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    height: 44px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
     margin-bottom: 8px;
 }
 
@@ -651,6 +665,10 @@ ul { list-style: none; }
     .announce__content { gap: 10px; }
 
     .nav__toggle { display: flex; }
+
+    .nav__logo-img {
+        height: 64px;
+    }
 
     .nav__menu {
         position: fixed;
