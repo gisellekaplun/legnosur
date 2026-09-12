@@ -1,5 +1,5 @@
 /* =========================================
-   LEGNOSUR - Bases de Sommier & Textiles
+   LEGNOSUR - Bases de Sommier & Colchones
    Paleta: madera/café + dorado sobre oscuro
    Tipografía: Switzer (self-hosted, Fontshare)
    ========================================= */
@@ -594,9 +594,17 @@ ul { list-style: none; }
 
 .contacto__social {
     position: absolute;
-    top: 50%;
+    bottom: 48px;
     right: 24px;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacto__social-text {
+    font-size: 1rem;
+    color: var(--gray);
+    opacity: 0.5;
 }
 
 .contacto__instagram {
