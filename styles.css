@@ -84,10 +84,7 @@ ul { list-style: none; }
 
 /* --- TOP ANNOUNCEMENT BAR --- */
 .announce {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     z-index: 1100;
     background: #10131A;
     border-bottom: 1px solid #262B36;
@@ -127,11 +124,13 @@ ul { list-style: none; }
 
 /* --- NAV --- */
 .nav {
-    position: fixed;
-    top: 34px;
+    position: sticky;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    margin-top: 0;
+    padding-top: 0;
     background: rgba(20, 18, 16, 0.92);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--dark-border);
@@ -149,7 +148,7 @@ ul { list-style: none; }
 .nav__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 8px 24px;
+    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
