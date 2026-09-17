@@ -95,7 +95,7 @@ ul { list-style: none; }
 .announce__track {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 7px 16px;
+    padding: 7px 16px 3.5px;
 }
 
 .announce__content {
