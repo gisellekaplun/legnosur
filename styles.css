@@ -766,6 +766,20 @@ ul { list-style: none; }
 }
 
 @media (max-width: 420px) {
-    .announce__item { font-size: 0.68rem; letter-spacing: 0.2px; }
-    .announce__content { gap: 8px; }
+    .announce__track {
+        padding: 0;
+        max-width: none;
+    }
+
+    .announce__content {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        animation: announce-scroll 14s linear infinite;
+        padding-left: 100%;
+    }
+
+    @keyframes announce-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
 }
