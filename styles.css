@@ -559,8 +559,8 @@ ul { list-style: none; }
 }
 
 .marcas__logo {
-    max-height: 56px;
-    width: auto;
+    width: 160px;
+    height: 56px;
     object-fit: contain;
     opacity: 0.85;
     filter: grayscale(1) brightness(1.2);
