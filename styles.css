@@ -435,6 +435,8 @@ ul { list-style: none; }
     align-items: start;
 }
 
+.nosotros__col { min-width: 0; }
+
 .nosotros__text p { font-size: 1.05rem; margin-bottom: 20px; color: var(--gray); }
 .nosotros__text strong { color: var(--white); font-weight: 600; }
 .nosotros__text em { color: var(--gold); font-style: normal; }
