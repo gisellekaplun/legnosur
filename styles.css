@@ -106,10 +106,11 @@ ul { list-style: none; }
 }
 
 /* --- TOP ANNOUNCEMENT BAR --- */
+/* Fondo ocre de marca (--gold); el texto va en --ink para mantener AA (8.99:1). */
 .announce {
     position: relative;
     z-index: 1100;
-    background: var(--azure);
+    background: var(--gold);
     border-bottom: 1px solid rgba(14,36,41,0.30);
     overflow: hidden;
     transition: transform 0.3s ease;
