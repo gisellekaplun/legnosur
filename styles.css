@@ -106,12 +106,13 @@ ul { list-style: none; }
 }
 
 /* --- TOP ANNOUNCEMENT BAR --- */
-/* Fondo ocre de marca (--gold); el texto va en --ink para mantener AA (8.99:1). */
+/* Fondo azul profundo (--dark) para que el texto ocre se lea: #F4B74A sobre
+   #2B4A52 da 5.32:1, que cumple AA. Sobre --azure (#719196) solo daría 1.89:1. */
 .announce {
     position: relative;
     z-index: 1100;
-    background: var(--gold);
-    border-bottom: 1px solid rgba(14,36,41,0.30);
+    background: var(--dark);
+    border-bottom: 1px solid rgba(244, 183, 74, 0.30);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -138,13 +139,13 @@ ul { list-style: none; }
     font-size: 0.78rem;
     font-weight: 500;
     letter-spacing: 0.4px;
-    color: var(--ink);
+    color: var(--gold);
     white-space: nowrap;
 }
 
-.announce__icon { color: var(--ink); flex-shrink: 0; }
+.announce__icon { color: var(--gold); flex-shrink: 0; }
 
-.announce__dot { color: rgba(14,36,41,0.40); }
+.announce__dot { color: rgba(244, 183, 74, 0.50); }
 
 /* --- NAV --- */
 .nav {
