@@ -54,6 +54,9 @@
     --dark-card: #1B3A44;
     --dark-border: #6C9BA2;
 
+    /* Teal profundo propuesto (nuevo, todavía sin uso) */
+    --teal-profundo: #2E4A4F;
+
     /* Texto */
     --white: #FFFFFF;
     --gray: #DCE7E9;
