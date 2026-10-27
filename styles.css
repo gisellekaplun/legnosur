@@ -187,7 +187,7 @@ button:focus-visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 72px;
+    min-height: 90px;
 }
 
 .nav__logo {
@@ -199,9 +199,9 @@ button:focus-visible {
 }
 
 .nav__logo-img {
-    height: 48px;
+    height: 96px;
     width: auto;
-    max-width: 220px;
+    max-width: 440px;
     object-fit: contain;
     object-position: left center;
     background: none;
@@ -798,9 +798,9 @@ button:focus-visible {
 }
 
 .footer__logo {
-    height: 40px;
+    height: 80px;
     width: auto;
-    max-width: 200px;
+    max-width: 400px;
     object-fit: contain;
     margin-bottom: 16px;
     background: none;
@@ -968,8 +968,8 @@ button:focus-visible {
     .nav__toggle { display: flex; }
 
     .nav__logo-img {
-        height: 32px;
-        max-width: 160px;
+        height: 64px;
+        max-width: 320px;
     }
 
     .nav__menu {
