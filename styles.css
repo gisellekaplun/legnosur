@@ -199,9 +199,9 @@ button:focus-visible {
 }
 
 .nav__logo-img {
-    height: 96px;
+    height: 67px;
     width: auto;
-    max-width: 440px;
+    max-width: 308px;
     object-fit: contain;
     object-position: left center;
     background: none;
@@ -968,8 +968,8 @@ button:focus-visible {
     .nav__toggle { display: flex; }
 
     .nav__logo-img {
-        height: 64px;
-        max-width: 320px;
+        height: 45px;
+        max-width: 224px;
     }
 
     .nav__menu {
