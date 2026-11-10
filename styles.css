@@ -921,6 +921,8 @@ button:focus-visible {
 /* --- MAYORISTAS --- */
 .mayoristas { padding: 8px 0 100px; background: var(--dark); }
 
+.mayoristas .section-title { margin-bottom: 24px; }
+
 .mayoristas__list {
     display: grid;
     gap: 16px;
