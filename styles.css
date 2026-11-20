@@ -585,6 +585,10 @@ button:focus-visible {
     gap: 32px;
 }
 
+.productos__grid--tres {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .producto-card {
     display: flex;
     flex-direction: column;
