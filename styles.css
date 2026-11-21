@@ -994,6 +994,13 @@ button:focus-visible {
 .galeria__thumb.is-active { border-color: var(--gold); }
 .galeria__thumb img { width: 100%; height: auto; display: block; }
 
+.galeria--cuadrada .galeria__img { aspect-ratio: 1/1; }
+
+.galeria--cuadrada .galeria__thumb img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
 .producto-detalle__nota {
     font-size: 0.95rem;
     color: var(--gray-soft);
