@@ -973,6 +973,19 @@ button:focus-visible {
 .galeria__nav--prev { left: 16px; }
 .galeria__nav--next { right: 16px; }
 
+.galeria--flechas-blancas .galeria__nav {
+    background: transparent;
+    border-color: transparent;
+    color: var(--white);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+}
+
+.galeria--flechas-blancas .galeria__nav:hover {
+    border-color: transparent;
+    color: var(--white);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+
 .galeria__thumbs {
     display: flex;
     gap: 12px;
