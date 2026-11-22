@@ -89,16 +89,14 @@
             <div class="container">
                 <div class="producto-detalle__grid">
                     <div class="producto-detalle__media producto-detalle__media--galeria">
-                        <!-- Fotos ilustrativas. Para reemplazar por fotos reales: 1) poner las fotos definitivas en assets/img/productos/sommiers/ con estos mismos nombres (o cambiar los src de abajo), 2) actualizar los alt según el contenido real de cada foto y 3) borrar las etiquetas <figcaption class="ilustrativa"> para quitar la leyenda. Las miniaturas apuntan a los mismos archivos: si cambiás el nombre, actualizalas también. -->
-                        <div class="galeria" data-galeria>
+                        <!-- Fotos ilustrativas. Para reemplazar por fotos reales: 1) poner las fotos definitivas en assets/img/productos/sommiers/ con estos mismos nombres (o cambiar los src de abajo), 2) actualizar los alt según el contenido real de cada foto y 3) sacar el texto "Imagen ilustrativa" de la descripción. Las miniaturas apuntan a los mismos archivos: si cambiás el nombre, actualizalas también. -->
+                        <div class="galeria galeria--flechas-blancas" data-galeria>
                             <div class="galeria__viewport">
                                 <figure class="galeria__slide is-active">
                                     <img class="galeria__img" src="/assets/img/productos/sommiers/duetto-ambiente.webp" alt="Box con cajón Duetto abierto en un dormitorio" width="1024" height="683">
-                                    <figcaption class="ilustrativa">Imagen ilustrativa</figcaption>
                                 </figure>
                                 <figure class="galeria__slide">
                                     <img class="galeria__img" src="/assets/img/productos/sommiers/duetto-neutro.webp" alt="Box con cajón Duetto abierto sobre fondo claro" width="1024" height="683">
-                                    <figcaption class="ilustrativa">Imagen ilustrativa</figcaption>
                                 </figure>
                             </div>
                             <button class="galeria__nav galeria__nav--prev" type="button" aria-label="Foto anterior">&#8249;</button>
@@ -114,6 +112,7 @@
                         </div>
                     </div>
                     <div class="producto-detalle__body">
+                        <p class="producto-detalle__nota">Imagen ilustrativa</p>
                         <!-- TODO: validar con el cliente -->
                         <p class="producto-detalle__nota">Colchón y respaldo no incluidos.</p>
                         <!-- TODO: confirmar con el cliente: medidas y terminación. No agregar datos hasta tener la confirmación. -->
