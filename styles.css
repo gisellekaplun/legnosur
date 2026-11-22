@@ -796,7 +796,7 @@ button:focus-visible {
 
 /* --- FOOTER --- */
 .footer {
-    padding: 48px 24px;
+    padding: 19px 24px;
     background: var(--ink);
     border-top: 1px solid var(--dark-border);
 }
@@ -808,11 +808,11 @@ button:focus-visible {
 }
 
 .footer__logo {
-    height: 80px;
+    height: 48px;
     width: auto;
     max-width: 400px;
     object-fit: contain;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     background: none;
     box-shadow: none;
 }
@@ -822,7 +822,7 @@ button:focus-visible {
 .footer__grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 40px;
+    gap: 24px;
     width: 100%;
 }
 
@@ -834,13 +834,13 @@ button:focus-visible {
 .footer__contact {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
 
 .footer__link {
     display: inline-flex;
     align-items: center;
-    min-height: 32px;
+    min-height: 19px;
     font-size: 0.95rem;
     color: var(--gray);
 }
@@ -1144,7 +1144,7 @@ button:focus-visible {
 
     .footer__grid {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 17px;
     }
 }
 
