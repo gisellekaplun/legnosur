@@ -88,19 +88,17 @@
             <div class="container">
                 <div class="producto-detalle__grid">
                     <div class="producto-detalle__media producto-detalle__media--galeria">
-                        <!-- Fotos 2 y 3 ilustrativas. Para reemplazarlas por fotos reales: 1) poner las fotos definitivas en assets/img/productos/sommiers/ con estos mismos nombres (o cambiar los src de abajo), 2) actualizar los alt según el contenido real de cada foto y 3) borrar las etiquetas <figcaption class="ilustrativa"> para quitar la leyenda. La foto 1 es real y no lleva leyenda. Las miniaturas apuntan a los mismos archivos: si cambiás el nombre, actualizalas también. -->
-                        <div class="galeria galeria--cuadrada" data-galeria>
+                        <!-- Fotos 2 y 3 ilustrativas. Para reemplazarlas por fotos reales: 1) poner las fotos definitivas en assets/img/productos/sommiers/ con estos mismos nombres (o cambiar los src de abajo), 2) actualizar los alt según el contenido real de cada foto y 3) sacar el texto "Imagen ilustrativa" de la descripción. La foto 1 es real. Las miniaturas apuntan a los mismos archivos: si cambiás el nombre, actualizalas también. -->
+                        <div class="galeria galeria--cuadrada galeria--flechas-blancas" data-galeria>
                             <div class="galeria__viewport">
                                 <figure class="galeria__slide is-active">
                                     <img class="galeria__img" src="/assets/img/productos/sommier-roomy.webp" alt="Sommier Roomy con sistema hidráulico y baulera" width="1254" height="1254">
                                 </figure>
                                 <figure class="galeria__slide">
                                     <img class="galeria__img" src="/assets/img/productos/sommiers/roomy-ilustrativa-ambiente.webp" alt="Sommier Roomy con el baúl abierto en un dormitorio" width="928" height="619">
-                                    <figcaption class="ilustrativa">Imagen ilustrativa</figcaption>
                                 </figure>
                                 <figure class="galeria__slide">
                                     <img class="galeria__img" src="/assets/img/productos/sommiers/roomy-ilustrativa-neutro.webp" alt="Sommier Roomy con el baúl abierto sobre fondo claro" width="1200" height="800">
-                                    <figcaption class="ilustrativa">Imagen ilustrativa</figcaption>
                                 </figure>
                             </div>
                             <button class="galeria__nav galeria__nav--prev" type="button" aria-label="Foto anterior">&#8249;</button>
@@ -119,6 +117,7 @@
                         </div>
                     </div>
                     <div class="producto-detalle__body">
+                        <p class="producto-detalle__nota">Imagen ilustrativa</p>
                         <!-- TODO: confirmar con el cliente medidas, terminación y si el conjunto incluye colchón -->
                         <div class="producto-detalle__actions">
                             <a href="https://wa.me/5491135466210?text=Hola%20Legnosur%2C%20quiero%20consultar%20por%20el%20sommier%20Roomy" target="_blank" rel="noopener" class="btn btn--primary">Consultar por WhatsApp</a>
